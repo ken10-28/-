@@ -5,10 +5,10 @@ using namespace std;
 
 int main(){
 	int x , y,z;
-	cout<<"½ò¦a¹p¹CÀ¸"<<endl; 
+	cout<<"è¸©åœ°é›·éŠæˆ²"<<endl; 
 	cout<<endl;
-	cout<<"¹CÀ¸ª±ªk"<<endl;       //how to play
-	cout<<"¨Ì·Ó¤U¤è·Q¶}±Òªº®æ¤l¦ì¸m¿é¤J®y¼Ğ"<<endl;
+	cout<<"éŠæˆ²ç©æ³•"<<endl;       //how to play
+	cout<<"ä¾ç…§ä¸‹æ–¹æƒ³é–‹å•Ÿçš„æ ¼å­ä½ç½®è¼¸å…¥åº§æ¨™"<<endl;
 	cout<<"ex:5 5   ,   3 2  "<<endl;
 	cout<<endl;
 	cout<<"   ";
@@ -35,23 +35,23 @@ int main(){
              if (y == 0)
                cout<<"   "<<x; 
              else
-                 cout<<"¤f";
+                 cout<<"å£";
          }
         else
          for (y = 0; y <= size; y++) {
              if (y == 0)
                cout<<"  "<<x; 
              else
-                 cout<<"¤f";
+                 cout<<"å£";
          }
          cout<<endl;
 	 
 	}
-	cout<<"½Ğ¿é¤Jx®y¼Ğ"<<endl; 
+	cout<<"è«‹è¼¸å…¥xåº§æ¨™"<<endl; 
 	cin>>x;
-	cout<<"½Ğ¿é¤Jy®y¼Ğ"<<endl;
+	cout<<"è«‹è¼¸å…¥yåº§æ¨™"<<endl;
 	cin>>y; 
-	cout<<"½T©w¿é¤J( 15 , 12 )? 0 or 1";
+	cout<<"ç¢ºå®šè¼¸å…¥( 15 , 12 )? 0 or 1";
 	cin>>z;
 	cout<<endl;
 }
