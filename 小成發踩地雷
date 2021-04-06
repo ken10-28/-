@@ -20,32 +20,33 @@ int main(){
 		
 		system("cls");
 		print_board();        //print out the game board
-		put_bomb();	
+		put_bomb();	      //set bomb on board
 		
 	}
 	
 	if(left_bomb()=0){
-		ask_if_ends();		
+		ask_if_ends();	      //check if game ends
 	}
 	else(){
 		cout<<"請輸入x座標"<<endl; 
 	    cin>>digX;
 	    cout<<"請輸入y座標"<<endl;
 	    cin>>digY; 
-	    cout<<"確定輸入( 15 , 12 )? 0 or 1";
+	    cout<<"確定輸入( 15 , 12 )? 0 or 1";   //ask location
 	    cin>>z
 	    if(z==1)
-		dig_place();
+		dig_place();   
 		calculate_area_bomb();
 		else
 		 break
 		
 	}	
 	put_bomb();           //set bomb
-	open_location();      //
+	open_location();      
 	
 	return 0;
 }
+
 void print_board(){
 	int x , y,z;
 	cout<<endl;
@@ -86,6 +87,7 @@ void print_board(){
          cout<<endl;
 	 
 	}
+	
 void put_bomb(){
 	srand( (unsigned)time(NULL) );
 	int rand_num;
@@ -108,6 +110,7 @@ void calculate_area_bomb(int cells[][11]){
                            cells[i][j]++;
 }
 }
+
 void dig_place(digX,digY){   
    int x , y ;
     std :: cin >> x >> y;
@@ -120,6 +123,7 @@ void dig_place(digX,digY){
     return ;
 	
 }
+
 int  left_bomb(){  
     short set = 0;
     for(short i = 0 ; i < 100 ; i++){
@@ -146,6 +150,7 @@ int  left_bomb(){
         }
     else return true;
 }
+
 void ask_if_ends(){char command;
     std :: cout << "Do you want to play again?(y/n)";
     std :: cin >> command;
